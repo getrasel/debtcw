@@ -3144,6 +3144,14 @@ textarea.form-control-lg {
   right: 0 /* rtl:ignore */;
   left: auto /* rtl:ignore */; }
 
+  @media (max-width:991px){
+    .phone-1{
+      width: unset;
+      left: 0;
+      position: relative;
+    }
+  }
+  
   @media (max-width:550px) {
     .phone-1{
       display:none;
@@ -3159,9 +3167,7 @@ textarea.form-control-lg {
     --bs-position: end;
     right: 0 /* rtl:ignore */;
     left: auto /* rtl:ignore */; }
-  .phone-1 {
-    display: flex;
-  } }
+ }
 
 @media (min-width: 768px) {
   .dropdown-menu-md-start {
@@ -8832,6 +8838,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
 
 .top-wrap {
   background: #052f48 !important;
+  display: none;
   padding: 0; }
   @media (max-width: 992px) {
     .top-wrap {
@@ -8908,11 +8915,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
 .ftco-navbar-light {
   background: white !important;
   position: absolute;
-  top: 44px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 3;
   padding: 0; }
+  @media (max-width: 992px){
+    .ftco-navbar-light {
+      top: 0;
+    }
+  }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
       background: #052c43 !important;
@@ -10596,3 +10608,12 @@ input[type="checkbox"] {
   /* Additional checkbox specific styles can be added here */
 }
   
+
+
+@media (max-width:991px){
+  .phone-1{
+    width: unset;
+    left: 0;
+    position: relative;
+  }
+}
